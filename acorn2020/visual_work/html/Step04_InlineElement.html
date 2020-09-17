@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step04_InlineElement.html</title>
+</head>
+<style>
+    /* id는 유일해야 함, class는 그룹으로 묶어줌 */
+    /* span{                        //요소명으로 속성 변경
+        color:red;
+    } */
+    #one{                           /*요소의 아이디 선택자로 속성 변경(아이디선택자는 아이디 앞에 #이 붙는다.)*/
+        color:red;
+    }
+    .friends{                       /*클래스 선택자는 클래스명 앞에 . 을 붙인다.*/
+        font-style: italic;
+        font-weight: bold;
+        color: blue;
+    }
+</style>
+<body>
+    <span>span요소는 인라인 요소 입니다.</span>
+    <span>하나</span>
+    <span>두울</span>
+    <span>세엣</span>
+
+    <p>span요소는 <span id="one">Inline</span>요소입니다.</p>
+    <p>내 이름은 <span class="friends">김구라</span> 입니다.</p>
+    <p>너의 이름은 <span class="friends">해골</span> 입니다.</p>
+    <p>친구의 이름은 <span class="friends">원숭이</span> 입니다.</p>
+
+</body>
+</html>

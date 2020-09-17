@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step12_anchor.html</title>
+    <style>
+        /* 클래스명이 spacer  인 요소에 적용할 css */
+        .spacer{
+            height: 500px;
+            background-color: yellow;
+        }
+        /* p의 자식 요소 중에서 span 요소에 적용할 css */
+        p > span{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>a(anchor) 요소는 하이퍼링크, 책갈피, javascript 등을 수행할때 사용</h1> 
+    <ul>
+        <!-- href="이동할 페이지의 주소(위치)를 작성한다" -->
+        <!-- 현재 위치를 기준으로 상대 경로 이동 -->
+        <li><a href="hello.html">hello.html  로 가기</a></li>
+        <!-- 웹에서의 절대 경로 이동 -->
+        <li><a href="http://14.63.164.99/student.html">공부방</a></li>
+        <!-- 파일 시스템에서의 절대 경로 이동 -->
+        <li><a href="C:/acorn2020/visual_work/html/hello.html">hello.html</a></li>
+        <!-- 같은 페이지 내에서의 책갈피 이동 -->
+        <li><a href="#one">id 가 one 인 컨텐츠로 스크롤 이동</a></li>
+        <li><a href="#two">id 가 two 인 컨텐츠로 스크롤 이동</a></li>
+        <li><a href="#three">id 가 three 인 컨텐츠로 스크롤 이동</a></li>
+        <!-- javascript 수행하기 -->
+        <li><a href="javascript:console.log('hello~');">javascript 수행하기</a></li>
+        <!-- 모바일 기기에서 동작하는 anchor -->
+        <li><a href="tel:010-1111-2222">전화걸기</a></li>
+        <li><a href="mailto:oli999@naver.com">이메일 쓰기</a></li>
+    </ul>
+    <div class="spacer"></div>
+    <p id="one"><span>one</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi minima a adipisci quam ducimus odit beatae quibusdam et numquam incidunt, nesciunt nemo atque obcaecati quaerat esse eos commodi porro temporibus?</p>
+    <div class="spacer"></div>
+    <p id="two"><span>two</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod voluptatem provident, facere dicta mollitia perspiciatis reprehenderit porro! Possimus repellendus beatae ea! Numquam quam illo quasi rem ipsam deserunt minus quis!</p>
+    <div class="spacer"></div>
+    <p id="three"><span>three</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime necessitatibus, suscipit dolorum nisi odio ut enim inventore, explicabo assumenda, aliquid tenetur? Rerum alias quia autem sed veniam facere aperiam cum.</p>
+    <div class="spacer"></div>
+</body>
+</html>

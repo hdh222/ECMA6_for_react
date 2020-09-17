@@ -1,0 +1,84 @@
+주석
+html <!-- -->
+css /* */
+javascript  한 줄 주석 // ,  여러 줄 주석 /* */
+
+html 내용, css는 디자인, javascript는 동작
+
+css는 <head>요소 안에서 사용되며, 요소명, ID, 클래스 명으로 디자인 할 수 있음
+javascript는 <head>요소와 <body>요소 둘 다 사용가능.
+
+<hn>요소는 주로 제목 중제목, 소제목 등을 구분할 때 사용함. 숫자가 낮을수록 글자굵기와 크기가 커짐
+ex)<h1>안녕하세요</h1> <h2>반갑습니다.</h2> <h3>나중에봐요</h3>
+
+[head 요소에 포함되는 내용]
+1. 주요 설정 정보
+2. 웹페이지의 제목
+3. style 요소
+4. script 요소
+
+[body 요소에 포함되는 내용]
+1. 웹브라우저의 표시할 내용
+2.  script요소
+
+외부 css, javascript 로딩
+css = <link>요소 사용 rel 속성과 href속성 사용 href 속성은 경로 지정(경로가 같을 경우 파일명만 지정), javascript <script>요소 src속성으로 경로 지정,
+<style>
+	h1{                                <-- 요소명으로 노랑색 배경으로 바꿀 경우 h1에 속한 모든 내용의 배경색이 변함
+		background-color:yellow;
+	}
+
+	#one{			<-- ID를 가진 배경색을 바꿈, ID는 중복이 될 수 없음
+		background-color:yellow;
+	}
+
+	.friends{			<-- class명을 가진 배경색을 바꿈, class는 그룹으로 묶어주는 역할을 하기 때문에 클래스에 속한 내용들의 배경색이 변함.
+		background-color:yellow;	
+	}
+
+	
+</style>
+
+<head>
+	<title>탭 제목</title>
+	<style>
+	
+	</style>
+	<script>
+
+	</script>
+</head>
+<body>
+	본문내용
+	<script>
+		콘솔 출력시 console.log를 사용 --> 사용 예) console.log("안녕");
+	</script>
+</body>
+
+Elements = 로딩한 문서의 구조 파악 가능
+
+[이미지 출력]
+<body>요소에 <img> 요소 src속성에 경로 지정
+
+[BlockElement 요소 종류] 
+<p> 단락 나타낼 때 사용
+<hn> 제목 구분할 때 사용 h1~h6까지 있음.
+<div> 문단 나타낼 때 사용
+강제개행 <br>
+
+[InlineElement 요소]
+<span>
+
+[안쪽 컨텐츠의 폭과 높이 제한]
+width : ;, height : ;
+
+[경계선 안쪽 여백]
+padding : ;
+
+[경계선 바깥 여백]
+margin : ;
+
+[경계선 폭, 색상, 스타일]
+border-width : ;
+border-color : ;
+border-style : ;

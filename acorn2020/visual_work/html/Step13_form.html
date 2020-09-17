@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step13_form.html</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+
+            /* 좌우로 가운데 정렬하기 */
+            width:768px;
+            /* width:80%;  */
+            margin:0 auto; /* 위아래 margin 0, 좌우margin은 auto로 한다. */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>폼 요소 작성하기</h1>
+        <form action="loginAction">
+            <!-- for 와 id가 같아야함. -->
+            <!-- input에 있는 name은 서버에서 입력한 내용을 추출할 때 필요함.-->
+            <label for="email">이메일</label>
+            <input type="text" id="email" name="email"/>
+
+            <label for="pwd">비밀번호</label>
+            <input type="password" id="pwd" name="pwd">
+
+            <!-- form안에 있는 button type="submit" 버튼을 누르면 form 이 제출된다.-->
+            <button type="submit">로그인</button>
+            <!-- 버튼요소 사이에 있는 문자열을 이너텍스트라고 한다.-->
+
+            <!-- <button type="reset">취소</button> -->
+        </form>
+    </div>
+</body>
+</html>

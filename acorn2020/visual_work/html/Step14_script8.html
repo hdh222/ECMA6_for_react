@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step14_script8.html</title>
+</head>
+<body>
+    <input type="text" id="inputMsg" placeholder="메세지입력해"/>
+    <button onclick="send()">전송</button>                                  <!-- 버튼 클릭시 send()함수 호출 -->
+
+    <p id="console"></p>
+    <script>
+
+        //전송버튼 누르면 호출되는 함수
+        function send(){
+            
+            var msg = document.querySelector("#inputMsg").value;            //입력한 문자열 저장
+            document.querySelector("#console").innerText = msg;             //저장한 문자열로 console id를 가진 p요소 innerText 수정
+        }
+        
+        
+        
+    </script>
+</body>
+</html>

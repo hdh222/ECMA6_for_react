@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step08_ol.html</title>
+    <style>
+        /* 클래스 명이 food 인 요소의 자식 중에서 li 요소를 선택 */
+        .food > li{
+            background-color: yellowgreen;
+        }
+        /* 클래스 명이 person 인 요소의 자식 중에서 
+            li 요소에 마우스가 hover 된 요소을 선택*/
+        .person > li:hover{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>순서 있는 목록 (ordered list) ol 요소</h1>
+    <p>
+        ol 의 자식 요소로는 반드시 li 요소가 와야한다.
+    </p>
+    <ol>
+        <li>하나</li>
+        <li>두울</li>
+        <li>세엣</li>
+    </ol>
+
+    <h1>좋아하는 안주 목록 입니다.</h1>
+    <ol class="food">
+        <li>치킨</li>
+        <li>불막창</li>
+        <li>삼겹살</li>
+        <li>노가리</li>
+    </ol>
+
+    <h1>좋아하는 연예인 목록 입니다.</h1>
+    <ol class="person">
+        <li>아이린</li>
+        <li>김구라</li>
+        <li>아이유</li>
+    </ol>
+</body>
+</html>

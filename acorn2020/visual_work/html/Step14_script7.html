@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step14_script7.html</title>
+    <style>
+        img:hover{
+            cursor:pointer;
+            background-color: yellow;
+        }
+        h1{
+            color:red;
+        }
+
+        img{
+            transition : margin-left 0.4s ease-out;         
+        }
+    </style>
+</head>
+<body>
+    <h1 styel="color:red;">이미지 움직이기 테스트</h1>  <!-- 인라인 css -->
+    <button onclick="reset();">리셋</button><br/>
+    
+    <img id="one" src="images/run1.png" onclick="move();" id="dd"/>
+    <script>
+        marginNum = 0;          //초기화
+        
+        //이미지를 클릭했을 때 호출되는 함수
+        function move(){
+            marginNum += 100;        //왼쪽마진에 100씩 누적 +=
+            document.querySelectorAll("img")[0].style.marginLeft = marginNum + "px";        //marginNum으로 이미지의 왼쪽 마진 반영.
+            
+        }
+
+        //리셋 버튼을 눌렀을 때 호출되는 함수
+        function reset(){
+            marginNum = 0;           //왼쪽마진을 0으로 초기화    
+            document.querySelector("#one").style.marginLeft = marginNum + "px";        //marginNum으로 이미지의 왼쪽 마진 반영.
+            
+        }
+
+        
+    </script>
+    
+</body>
+</html>

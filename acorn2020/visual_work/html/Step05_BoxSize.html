@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step05_BoxSize.html</title>
+    <style>
+        .box{
+            /* 안쪽 컨텐츠의 폭과높이 */
+            width: 100px;               /* 넓이 */
+            height: 100px;              /* 높이 */    
+            
+            padding: 10px;              /* 경계선 안쪽 여백 */
+            
+            margin: 10px;               /* 경계선 바깥 여백 중복되지 않음 곂쳐짐 */ 
+            
+            /* 경계선의 폭, 색상, 스타일*/
+            border-width: 5px;          
+            border-color: red;
+            border-style: solid;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">div1</div>  <!-- div.box{div$}*3 -->
+    <div class="box">div2</div>
+    <div class="box">div3</div>
+
+    <!--
+    <div class="box">div1</div>
+    <div class="box">div.box</div>             
+    <div id="one">div#one</div>               
+    <div class="box" id="one">div.box#one</div> -->  
+
+    
+</body>
+</html>

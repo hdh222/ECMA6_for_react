@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step14_script9.html</title>
+
+</head>
+<body>
+    <button onclick="plus();">증가</button>                         <!-- 버튼을 누르면 plus함수 호출 -->
+    <button onclick="minus();">감소</button>
+    <button onclick="reset();">리셋</button>
+    <p id="number">0</p>                
+    <script>
+        var number=0;    
+        //버튼 클릭 시 호출되는 함수.                                    // number 초기화
+        function plus(){
+            number = number + 1;                                        
+            document.querySelector("#number").innerText = number;       // number로 innerText 수정
+        }
+
+        function minus(){
+            number = number - 1;                                        
+            document.querySelector("#number").innerText = number;       // number로 innerText 수정
+        }
+
+        function reset(){
+            number = 0;                                        
+            document.querySelector("#number").innerText = number;       // number로 innerText 수정
+        }
+        
+    </script>
+</body>
+</html>

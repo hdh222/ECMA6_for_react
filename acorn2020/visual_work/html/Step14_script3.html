@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step14_script3.html</title>
+</head>
+<body>
+    <script>
+        //함수에 대한 이해
+        var f1=function(){
+            console.log("f1함수가 호출되었습니다.");                    //undefined 리턴
+
+        };
+
+        var f2=function(){  
+            console.log("f2함수가 호출되었습니다.");                    //undefined 리턴
+            return; //종료하겠다는 의미
+        };
+
+        var f3=function(){
+            console.log("f3함수가 호출되었습니다.");                    //999 리턴 (number type)
+            return 999;
+        };
+
+        var f4 = function(){
+            console.log("f4 함수가 호출되었습니다.");                   //"abcd" 리턴 (string type) 
+            return "abcd";
+        };
+
+        var f5 = function(){
+            console.log("f5 함수가 호출되었습니다.");                   // {num:1,name:"김구라"} 리턴 (object type)
+            return {num:1,name:"김구라"};
+        };
+
+        var f6= function(){
+            console.log("f6 함수가 호출되었습니다.");                   //[10,20,30] 리턴   (array type)
+            return [10,20,30];
+        };
+
+        var name1 = "김구라";
+        var name2 = name1;              //name1을 참조한다고 함. name1의 값을 name2에 저장.
+
+        var c = f3;                     //함수를 참조했기 때문에 function type
+        var d = f3();                   //함수를 호출하여 값을 리턴받아 저장했기때문에 number type
+
+        var q = f5;                     //f5의 function type
+        var w = f5();                   //f5의 object type
+        var e = f5().name;              //string type  
+        var r = f5().num;               //number type
+
+        var i = f6()[0];                //number type 리턴값 10
+        var j = alert;
+        j(); 
+
+
+
+
+    </script>
+    
+    <!-- 함수 종료시점 동작을 전부 수행했거나 return을 만났을 때, 함수가 종료되는것을 함수가 return한다고 함.  -->
+
+</body>
+</html>

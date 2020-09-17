@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step13_form3.html</title>
+    <style>
+        .container{
+            width:768px;
+            margin:0 auto;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="insertAction">
+            <label for="email">이메일</label>
+            <input type="text" id="email" name="email" value="김구라"/><br/> <!-- input요소에  value지정하면 초기값된다. -->
+            <fieldset>                                                        <!-- 보조label역할을 함. -->
+                <legend>성별입력</legend>
+                <label>                                                                     <!-- name속성의 값이 같으면 radio는 그룹으로 묶인다. -->
+                    <input type="radio" name="gender" checked="checked" value="남자"/>남자 <!-- 같은 lable text임--> <!-- name과 value는 나중에서버에서 값을 추출할 때 사용된다.-->
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="여자"/>여자
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>취미 정보 선택</legend>
+                <label>
+                    <input type="checkbox" name="hobby" value="테니스"/>테니스          <!-- 체크박스는 그룹으로 묶이지 않아 여러 개 선택이 가능하다. -->
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="당구"/>당구
+                </label>
+
+                <label>
+                    <input type="checkbox" name="hobby" value="etc"/>기타 등등
+                </label>
+
+
+            </fieldset>
+            <label for="job">직업 선택</label>
+            <select name="job" id="job">
+                <option value="">선택</option>
+                <option value="teacher">선생님</option>
+                <option value="doctor">의사</option>
+                <option value="programmer">프로그래머</option>
+                <option value="etc">기타</option>
+            </select>
+            <br>
+            <label for="lunch">점심 메뉴 선택</label>
+            <select name="lunch" id="lunch" multiple="multiple"><!-- 멀티플속성은 컨트롤이나 쉬프트를 사용하여 여러개를 선택 할 수 있게 해준다. -->
+                <option value="">선택</option>
+                <option>짜장면</option>
+                <option>짬뽕</option>
+                <option>군만두</option>
+                <option>탕수육</option>
+
+            </select> 
+            <br>
+            <label for="coffee">커피 선택</label>
+            <select name="coffee" id="coffee">
+                <optgroup label="에스프레소">                       <!-- 옵션에 카테고리를 보여줌 -->
+                    <option>아메리카노</option>
+                    <option>라떼</option>
+                    <option>모카</option>
+                </optgroup>
+
+                <optgroup label="프라프치노">
+                    <option>카라멜 프라프치노</option>
+                    <option>모카 프라프치노</option>
+                    <option>오렌지 프라프치노</option> 
+                </optgroup>
+
+            </select>
+            <br>
+            <label for="file">첨부파일</label>
+            <input type="file" name="file" id="file">
+            <br>
+            <label for="comment">하고싶은말</label><br>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea><br>
+            <button type="submit">가입</button>
+            <button type="reset">취소</button>
+        </form>
+    </div>
+</body>
+</html>

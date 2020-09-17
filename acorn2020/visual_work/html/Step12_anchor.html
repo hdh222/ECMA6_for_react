@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step12_anchor.html</title>
+    <style>
+        /* 클래스명이 spacer 인 요소에 적용할 css */
+        .spacer{
+            height:500px;
+            background-color: yellow;
+
+        }
+        /* p의 자식 요소 중에서 span요소에 적용할 css */
+        p > span{
+            color:red;
+            font-weight:bold;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>a(anchor)요소는 하이퍼링크, 책갈피, 자바스크립트 등을 수행할 때 사용</h1>
+    <ul>
+        <!-- href="이동할 페이지의 주소(위치)를 작성한다."-->
+        <li><a href="hello.html">hello.html로가기</a></li>                          <!--상대경로(현재위치를 기준으로 상대 경로 이동)-->
+        <li><a href="http://14.63.164.99/student.html">공부방</a></li>              <!--웹상에서의 절대 경로-->
+        <li><a href="C:/acorn2020/visual_work/html/hello.html">hello.html</a></li>  <!--파일 시스템에서의 절대 경로-->
+        
+        <!-- 같은 페이지에서 책갈피 이동(#id) -->
+        <li><a href="#one">id가 one 인 컨텐츠로 스크롤이동</a></li>
+        <li><a href="#two">id가 two 인 컨텐츠로 스크롤이동</a></li>
+        <li><a href="#three">id가 three 인 컨텐츠로 스크롤이동</a></li>
+
+        <!-- 자바스크립트 수행하기 -->
+        <li><a href="javascript:console.log('hello');">자바스크립트 수행하기</a></li>
+        
+        <!-- 모바일 기기에서 동작하는 anchor -->
+        <li><a href="tel:010-1111-2222">전화걸기</a></li>
+        <li><a href="mailto:oli999@naver.com">이메일쓰기</a></li>
+    </ul>
+
+
+    <div class="spacer"></div>
+    <p id="one"><span>one</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ut officiis asperiores at, in minima. Rerum modi sunt autem hic tenetur error in odit ipsum minus laboriosam, quibusdam molestias vitae?</p>
+    
+    <div class="spacer"></div>
+    <p id="two"><span>two</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quos nulla natus nemo molestias autem voluptas corrupti sit quibusdam perferendis tempora et libero iste culpa facere at alias velit modi?</p>
+    
+    <div class="spacer"></div>
+    <p id="three"><span>three</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, consequuntur. Consequuntur minima impedit quas esse ullam ex, atque ratione ea cumque laborum enim fuga asperiores voluptatum reprehenderit, doloribus natus quidem.</p>
+    <div class="spacer"></div>
+</body>
+</html>

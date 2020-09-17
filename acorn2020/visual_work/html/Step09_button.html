@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step09_button.html</title>
+    <style>
+        .remove-btn{
+            background-color: red;
+            color: white;
+            border-style: solid;
+            border-width:1px;
+            border-color:rgb(160,129,129);
+            border-radius: 5px;
+            padding: 10px;
+            cursor:pointer;
+
+        }
+        /* 마우스를 hover 했을 때 적용할 css */
+        .remove-btn:hover{
+            background-color: rgba(0, 255, 42, 0.637);
+        }
+
+        /* 누르고 있는 상태일 때 적용할 css*/
+        .remove-btn:active{
+            background-color: blue;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>버튼 요소 사용하기</h1>
+    <button onclick="alert('안녕');" >눌러보셈</button>
+    <button class="remove-btn">삭제하기</button>
+
+    
+</body>
+</html>

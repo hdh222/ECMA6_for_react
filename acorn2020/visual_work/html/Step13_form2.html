@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step13_form2.html</title>
+</head>
+<style>
+    .container{
+        width:768px;
+        margin:0 auto;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>table 요소를 이용해서 form 요소의 줄 맞추기</h1>
+        <form action="loginAction">
+            <table>
+                <tr>
+                    <td><label for="email">이메일</label></td>
+                    <td><input type="text" id="email" name="email"/></td>
+                </tr>
+                <tr>
+                    <td><label for="pwd">비밀번호</label></td>
+                    <td><input type="password" id="pwd" name="pwd"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">로그인</button></td>
+                </tr>
+            </table>
+            <!-- for 와 id가 같아야함. -->
+            <!-- input에 있는 name은 서버에서 입력한 내용을 추출할 때 필요함.-->
+            
+            
+
+            
+            
+
+            <!-- form안에 있는 button type="submit" 버튼을 누르면 form 이 제출된다.-->
+            
+            <!-- 버튼요소 사이에 있는 문자열을 이너텍스트라고 한다.-->
+
+            <!-- <button type="reset">취소</button> -->
+        </form>
+
+    </div>
+</body>
+</html>
